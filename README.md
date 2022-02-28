@@ -1,17 +1,8 @@
 # Big Data Homework - "Alexa, can you handle big data?"
-
-### Before You Begin
-
-1. Create a new repository for this project called `big-data-challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
-
-3. Inside your local git repository, create a directory for the level of challenge Challenge you choose. Use folder names corresponding to the challenges: **level-1** or  **level-2**.
-
-4. Download a Google Colab Notebook as a `ipynb` file and add it to this folder. This will be the main script to run for analysis. Be sure to also add any SQL queries you used to a `.sql` file and add it to your repo.
-
-5. Push the above changes to GitHub or GitLab.
-
+## Solution
+### Key Artifacts
+- [Level 1 Jupyter Notebook](level_one_solution.ipynb)
+- [Level 2 Jupyter Notebook](level_two_solution.ipynb)
 
 ## Background
 
@@ -25,6 +16,13 @@ There are two levels to this homework assignment. The second level is optional b
 - - -
 
 ## Instructions
+### Preparation - Creating RDS Instance on AWS:
+* An RDS Instance was created for the PostgreSQL Database in AWS called - `sgbigdatahw`
+* ![RDS Instance](Images/Amazon_RDS_Instance.PNG)
+* In order to connect to it using PGAdmin tool, the Public Available setting had to be enabled
+* ![Public Available](Images/Public_Available.PNG)
+* A Server Instance in PGAdmin was then created using the URL associated with the RDS Instance:
+* ![Server Instance in PGAdmin](Images/RDS_Server_PGAdmin.PNG)
 
 ### Level 1
 
@@ -40,9 +38,21 @@ There are two levels to this homework assignment. The second level is optional b
 
   * Count the number of records (rows) in the dataset.
 
-  * **Transform** the dataset to fit the tables in the [schema file](../Resources/schema.sql). Be sure the DataFrames match in data type and in column name.
+  * **Transform** the dataset to fit the tables in the [schema file](schema.sql). Be sure the DataFrames match in data type and in column name.
 
-  * **Load** the DataFrames that correspond to tables into an RDS instance. **Note:** This process can take up to 10 minutes for each. Be sure that everything is correct before uploading.
+* **Load** the DataFrames that correspond to tables into an RDS instance. **Note:** This process can take up to 10 minutes for each. Be sure that everything is correct before uploading.
+  * Once the tables were loaded with the data in the dataframes, the tables were queried to ensure that the data is correctly loaded:
+ #### Review_Data Table:
+  ![Review_Data Table](Images/Review_ID_Table.PNG)
+  
+ #### Products Table:
+  ![Products Table](Images/Products_Table.PNG)
+
+ #### Customers Table:
+  ![Customers Table](Images/Customers_Table.PNG)
+
+ #### Vines Table:
+  ![Vines Table](Images/Vines.PNG)
 
 ### Level 2
 
