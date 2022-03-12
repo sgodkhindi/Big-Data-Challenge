@@ -1,4 +1,4 @@
-# Big Data Homework - "Alexa, can you handle big data?"
+# Big Data Challenge - "Alexa, can you handle big data?"
 ## Solution
 ### Key Artifacts
 - [Level 1 Jupyter Notebook](level_one_solution.ipynb)
@@ -121,10 +121,6 @@ findspark.init()
 
 * Ensure your repository has regular commits and a thorough README.md file
 
-## Rubric
-
-[Unit 22 Rubric - Big Data Homework - "Alexa, can you handle big data?"](https://docs.google.com/document/d/1H-TBgBUz1jVGG1zvo046GraApmbepVZgYionh-4mNas/edit?usp=sharing)
-
 - - -
 
 ## References
@@ -132,5 +128,3 @@ findspark.init()
 Amazon customer Reviews Dataset. (n.d.). Retrieved April 08, 2021, from: [https://s3.amazonaws.com/amazon-reviews-pds/readme.html](https://s3.amazonaws.com/amazon-reviews-pds/readme.html)
 
 - - -
-
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
