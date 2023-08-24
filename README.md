@@ -6,9 +6,9 @@
 
 ## Background
 
-In this assignment you will put your ETL skills to the test. Many of Amazon's shoppers depend on product reviews to make a purchase. Amazon makes these datasets publicly available. However, they are quite large and can exceed the capacity of local machines to handle. One dataset alone contains over 1.5 million rows; with over 40 datasets, this can be quite taxing on the average local computer. Your first goal for this assignment will be to perform the ETL process completely in the cloud and upload a DataFrame to an RDS instance. The second goal will be to use PySpark or SQL to perform a statistical analysis of selected data.
+In this assignment we put your ETL skills to the test. Many of Amazon's shoppers depend on product reviews to make a purchase. Amazon makes these datasets publicly available. However, they are quite large and can exceed the capacity of local machines to handle. One dataset alone contains over 1.5 million rows; with over 40 datasets, this can be quite taxing on the average local computer. Our first goal for this assignment was to perform the ETL process completely in the cloud and upload a DataFrame to an RDS instance. The second goal was to use PySpark or SQL to perform a statistical analysis of selected data.
 
-There are two levels to this homework assignment. The second level is optional but highly recommended.
+There are two levels to this assignment. The second level is optional but highly recommended.
 
 1. Create DataFrames to match production-ready tables from two big Amazon customer review datasets.
 2. Analyze whether reviews from Amazon's Vine program are trustworthy.
@@ -26,15 +26,15 @@ There are two levels to this homework assignment. The second level is optional b
 
 ### Level 1
 
-* Use the furnished schema to create tables in your RDS database.
+* Create tables in an RDS database by using the furnished schema.
 
 * Create two separate Google Colab notebooks and **extract** any two datasets from the list at [review dataset](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt), one into each notebook.
 
   **Note:** It is possible to ETL both data sources in a single notebook, but due to the large data sizes, it will be easier to work with these S3 data sources in two separate Colab notebooks.
 
-* Be sure to handle the header correctly. If you read the file without the header parameter, you may find that the column headers are included in the table rows.
+* Ensure that the header is handled correctly. If we read the file without the header parameter, we may find that the column headers are included in the table rows.
 
-* For each notebook (one dataset per notebook), complete the following:
+* For each notebook (one dataset per notebook), to complete the following:
 
   * Count the number of records (rows) in the dataset.
 
@@ -64,9 +64,9 @@ Amazon has several policies to reduce the bias of its Vine reviews: [https://www
 
 But are Vine reviews truly trustworthy? Your task is to investigate whether Vine reviews are free of bias. Use either PySpark or—for an extra challenge—SQL to analyze the data.
 
-* If you choose to use SQL, first use Spark on Colab to extract and transform the data and load it into a SQL table on your RDS account. Perform your analysis with SQL queries on RDS.
+* If we choose to use SQL, ensure to first use Spark on Colab to extract and transform the data and load it into a SQL table on your RDS account. Perform the analysis with SQL queries on RDS.
 
-* While there are no hard requirements for the analysis, consider steps you can take to reduce noisy data, e.g., filtering for reviews that meet a certain number of helpful votes, total votes, or both.
+* While there are no hard requirements for the analysis, consider steps takes to reduce noisy data, e.g., filtering for reviews that meet a certain number of helpful votes, total votes, or both.
 
 * Submit a summary of your findings and analysis.
 
